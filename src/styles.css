@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card
+{
+    @apply bg-orange-100 rounded-md overflow-hidden shadow-md relative hover:shadow-xl cursor-pointer hover:scale-105 transition ease-in-out duration-200;
+}
+
+.badge
+{
+    @apply bg-red-300 text-gray-600 text-xs p-1 rounded-full uppercase absolute top-0 ml-1 mt-2;
+}
+
+.button
+{
+    @apply rounded-full bg-red-300 bg-opacity-50 text-black font-bold px-3 py-2 text-xs tracking-wider uppercase shadow-sm cursor-pointer hover:shadow-inner hover:bg-red-300;
+}

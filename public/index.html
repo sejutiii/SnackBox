@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-red-800 bg-yellow-100 bg-opacity-70 font-serif">
+    <div class="md:grid md:grid-cols-4">
+    <div class="md:flex md:col-span-1 border-r border-gray-500 border-opacity-10 md:justify-end hover:bg-yellow-100">
+        <nav class="md:text-right">
+            <div class="flex justify-between items-center">
+                <h1 class="text-4xl font-bold-uppercase pt-3 mb-4 px-4"><a href="/">SnackBox</a></h1>
+                <div class="cursor-pointer md:hidden">
+                    <svg class="w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </div>
+            </div>
+            <ul class="text-amber-700 text-sm hidden md:block">
+                <li class="pb-2">
+                   <a href="#" class="px-5 border-r-4 border-red-300"><span class="border-b border-amber-600">Home</span></a>
+                </li>
+                <li class="pb-2">
+                    <a href="#" class="px-5"><span class="border-b border-amber-600">About</span></a>
+                 </li>
+                 <li class="pb-2">
+                    <a href="#" class="px-5"><span class="border-b border-amber-600">Contact</span></a>
+                 </li>
+            </ul>
+        </nav>
+    </div> <!--End Nav-->
+    <main class="px-16 py-8 md:col-span-3 bg-amber-50">
+        <div class="flex justify-end mb-8 text-gray-700">
+            <a href="#" class="mr-2 button">Log In</a>
+            <a href="#" class=" button">Sign Up</a>
+        </div>
+        <header>
+            <h2 class="text-5xl font-bold-uppercase">Recipes</h2>
+            <h3 class="text-lg mt-1 font-light">For Snacktime</h3>
+        </header>
+        <div>
+            <h4 class="mt-6 font-bold text-2xl pb-2 border-b border-gray-500 border-opacity-25 text-dreamy">Latest Recipes</h4>
+            <div class="mt-5 grid md:grid-cols-3 gap-10"> <!-- space-x-4 adds spacing between cards -->
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="ramen.jpg" 
+                         class="h-36 md:h-48 w-full object-cover" alt="Ramen">
+                    <div class="text-red-800 p-2">
+                        <span>Spicy Carbonara Ramen</span>
+                        <span class="text-red-700 font-light block">Buldak</span>
+                    </div>
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                          
+                        <span>10 mins</span>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.xHrR4gCAYvffmpab3zsxqgAAAA?rs=1&pid=ImgDetMain" 
+                         class="h-36 md:h-48 w-full object-cover" alt="Cake">
+                    <div class="text-red-800 p-2">
+                        <span>Choco Lava Cake</span>
+                        <span class="text-red-700 font-light block">Yummy</span>
+                    </div>
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                          
+                        <span>40 mins</span>
+                    </div>
+                </div>
+            
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="https://bing.com/th?id=OSK.5773c1a49df8f8e641f5a11e18cf5c59" 
+                         class="h-36 md:h-48 w-full object-cover" alt="Salad">
+                    <div class="text-red-800 p-2">
+                        <span>Ceaser Salad</span>
+                        <span class="text-red-700 font-light block">Secret Recipe</span>
+                    </div>
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                          
+                        <span>25 mins</span>
+                    </div>
+                </div>
+            </div>            
+            </div>
+            <h4 class="mt-10 font-bold text-2xl pb-2 border-b border-gray-500 border-opacity-25 text-dreamy">Most Popular</h4>
+            <div class="mt-5 grid md:grid-cols-3 gap-10">
+                <!--Cards for Most Popular-->
+                <div class="card md:col-span-1">
+                    <img src="https://www.sugarandsoul.co/wp-content/uploads/2020/11/roasted-tomato-soup-8.jpg" 
+                         class="h-36 md:h-48 w-full object-cover" alt="soup">
+                    <div class="text-red-800 p-2">
+                        <span>Tomato Soup</span>
+                        <span class="text-red-700 font-light block">with Crutons</span>
+                    </div>
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                          
+                        <span>15 mins</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex button justify-center mt-16 transform">Load More</div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
